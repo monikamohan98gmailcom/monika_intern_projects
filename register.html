@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("content/image/skyblue.jpg");
+            } 
+            .size{
+                height: 20px;
+                width: 300px;
+            }
+            div{
+                border: 1px solid black;
+                margin: 30px;
+                padding: 20px;
+                width:50%;
+                padding-left: 30%;
+            }
+        </style>
+        
+        <link href="content/css/link.css" rel="stylesheet">
+        <title>general form</title>
+    </head>
+    <body>
+            <h1 >Form for Registration</h1>
+        <form action="thanks.html">
+           <marquee bgcolor="cyan"><p > Welcome to Monika Website.. Have a good day!!!</p> </marquee>
+        <div>   
+            First name:<br><br>
+             <input class="size" align="center" type="text" name="fname"  height="20px" width="100px"><br><br>
+            Last name:<br><br>
+             <input class="size" type="text" name="lname"><br><br>
+            Gender:<br><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female" checked>Female
+            <input type="radio" name="gender" value="Others">Others<br><br>
+            Nationality:<br><br>
+            <input type="checkbox" name="nation" value="indian">Indian
+            <input type="checkbox" name="nation" value="others">Others<br><br>
+            Date of birth:<br><br>
+            <input class="size" type="date" name="birthdate"><br><br>
+            E-mail id:<br><br>
+            <input class="size" type="email" name="email"><br><br>
+            Area of interest:<br><br>
+            <input type="checkbox" name="aoi" value="IOT">IOT
+            <input type="checkbox" name="aoi" value="AI">AI
+            <input type="checkbox" name="aoi" value="R&D">R&D<br><br>
+            Contact Number:<br><br>
+            <input class="size" type="tel" name="phoneno" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            Address:<br><br>
+            <textarea name="Address" rows="4" cols="50"></textarea><br><br>
+            City:<br><br>
+            <select name="city" class="size">
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Kerla">Kerala</option>
+                  </select><br><br>
+            <button  type="Submit"value="Submit">Register<br><br>
+            </div></form>
+
+    </body>
+</html>

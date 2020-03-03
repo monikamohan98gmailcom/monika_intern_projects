@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div{
+            text-align: center;
+            padding: 30px;
+            border: 1px solid black;
+        }
+        input{
+            padding: 10px;
+            margin-bottom:10px;
+        }
+        table,tr,th,td{
+            padding: 15px;
+            border-collapse: collapse;
+            border:1px solid black;
+            
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <script src="./task4-table.js" defer></script>
+        <h1 style="text-align: center;">Enter your details</h1>
+        <div>
+            <b>Name:</b><input type="text" id="name" name="Name" placeholder="Name"><br>
+            <b>email-id:</b><input type="email" id="email" name="email-id" placeholder="email-id"><br>
+            <b>Date-of-birth:</b><input type="date" id="dob" name="DOB" placeholder="date of birth"><br>
+            <b>Area-of-interest:</b><input type="text" id="aoi" name="aoi" placeholder="Area of interest"><br>
+            <button id="output" type="button">Next</button>
+            <button id="getTable" type="button">Get Table</button>
+        </div>
+        <div >
+            <center>
+            <table id="mytable" style="font-weight: bold;visibility: hidden;">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>dateOfBirth</th>
+                        <th>areaOfInterest</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </center>
+        </div>
+        
+    </body>
+</html>

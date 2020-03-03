@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>my calci</title>
+    </head>
+    <style>
+        button,input,p{
+            border-radius: 10px;
+            padding: 30px;
+            font-size: 30px;
+        }
+        div{
+            border: 1px solid black;
+            display: inline-block;
+            margin-left: 30%;
+           
+        }
+        body{
+            background-image: url('../image/calculator.jpg')
+        }
+    </style>
+    <body>
+        <script src="./task1-calci.js" defer></script>
+        <center><h1>MY CALCULATOR</h1></center>
+        <div style="text-align: center">
+            <input id="input" type="number" placeholder="enter your value">
+            <br>
+            <button id="sum" name="add">+</button>
+            <button id="minus" name="sub">-</button>
+            <button id="mul" name="mulitply">*</button>
+            <button id="div" name="divide">/</button> 
+            <p id="output" style="background-color: white"></p>
+        </div>
+    </body>
+</html>
